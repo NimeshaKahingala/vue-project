@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/assets/main.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
-    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -18,12 +18,12 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button v-on:click="add(10)">Add 10</button>
-      <button v-on:click="reduce(5)">Subtract 5</button>
+      <button v-on:click="counter++">Add 1</button>
+      <button v-on:click="counter--">Subtract 1</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-model="name" >
+      <!-- <input type="text" v-model="name" >
       <button v-on:click>Reset Input</button>
-      <p>Your Name: {{ name }}</p>
+      <p>Your Name: {{ name }}</p> -->
     </section>
   </body>
 </html>
