@@ -1,5 +1,5 @@
 <template>
-  <div ref="counter" class="graph-container">
+  <div class="graph-container">
     <header>
       <h1>Vue Events</h1>
     </header>
@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+const counter = ref(0)
 // import { onMounted, ref } from 'vue'
 
 // const counter = ref(null)
@@ -115,6 +117,7 @@ header {
   padding: 0.05rem 1rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
   border-radius: 20px;
+  padding: 6px 12px;
   margin: 1rem;
 }
 
